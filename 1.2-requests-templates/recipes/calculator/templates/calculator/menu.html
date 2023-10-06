@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>СПИСОК РЕЦЕПТОВ</title>
+</head>
+<body>
+<p>СПИСОК РЕЦЕПТОВ:</p>
+<ul style="color: blue; font-size: 20px">
+{% for ingredient, amount in menu.items %}
+    <li> {{ ingredient }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
